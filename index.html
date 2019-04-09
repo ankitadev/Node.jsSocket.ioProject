@@ -4,44 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CodeLife.io Chat</title>
+    <title>Chat away</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+    
+    
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h2>CodeLife.io Chat</h2>
+      <div class="page-header">
+      <h1>Chat Away</h1>
+    </div>
+        <pre>Share the URL above and CHAT AWAY unlimited!</pre>
+        <div class="col-md-8 text-center">
+          
           <div class="input-group col-6 mx-auto enter-name">
             <input type="text" id="name-input" class="form-control" placeholder="Enter Your Name">
             <span class="input-group-addon submit-name">Enter</span>
           </div>
-        </div>
-        <div class="col-md-12">
           <div class="chat-window">
             <div id="messages"></div>
           </div>
-        </div>
-        <div class="col-md-12">
           <div class="input-group enter-chat-message">
-            <input type="text" id="chat-input" class="form-control" placeholder="Chat Message...">
+            <input type="text" id="chat-input" class="form-control" placeholder="Message...">
             <span class="input-group-addon submit-chat-message">Submit</span>
           </div>
+          
         </div>
-      </div>
-      <div class="col-md-12 text-center">
+        <div id="sketch-holder">
+      <!-- Our sketch will go here! -->
+    </div>
+      <div class="col-md-12 text-center" style="text-align: center !important;">
         <small>
-          Powered by <a href="http://codelife.io">CodeLife.io</a>
+          Powered by <a href="http://www.byui.edu/">BYU-I</a>
         </small>
       </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
     <script src="/javascript/chat.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
   </body>
 </html>
